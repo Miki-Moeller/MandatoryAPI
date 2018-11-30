@@ -17,4 +17,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/products/{id}', 'ProductController@show');
+Route::get('/products/{UserId}', 'ProductController@show');
+Route::get('/youtubeuser/{id}', 'YoutubeuserController@show');
+Route::get('/youtubechannel/{id}', 'YoutubeChannelController@show');
