@@ -15,13 +15,13 @@ class youtubechannel extends JsonResource
     public function toArray($request)
     {
         return [
-            'Userid' => $this->UserId,
-            'Followers'=>$this->followers,
-            'Likes'=>$this->likes,
-            'NumberOfComments'=>$this->numberOfComments,
-            'Subscribers'=>$this->subscribers,
-            'Views'=>$this->views,
-            'ChannelId'=>$this->channelId,
+            'ChannelId' => $this->ChannelId,
+            'Followers'=>$this->Followers,
+            'Likes'=>$this->Likes,
+            'NumberOfComments'=>$this->NumberOfComments,
+            'Subscribers'=>$this->Subscribers,
+            'Views'=>$this->Views,
+            'UserId'=>$this->UserId,
 
         ];
     }
