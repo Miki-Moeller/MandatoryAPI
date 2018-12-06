@@ -22,7 +22,6 @@ class youtubechannel extends JsonResource
             'Subscribers'=>$this->Subscribers,
             'Views'=>$this->Views,
             'UserId'=>$this->UserId,
-
         ];
     }
 }

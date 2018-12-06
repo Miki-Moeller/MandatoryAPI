@@ -7,14 +7,16 @@ use App\Http\Resources\UserCollection;
 
 
 Route::get('/products/{id}', 'ProductController@show');
-
+Route::get('/home/{id}', 'ProductController@index');
 
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::get('/home', function () {
     return view('home');
 });
+
 /*
 Route::get('/products', function () {
     return view('products');
