@@ -1,6 +1,6 @@
 
 Dette er et view
-
+-ok
 
 
 <table class="table table-bordered">
