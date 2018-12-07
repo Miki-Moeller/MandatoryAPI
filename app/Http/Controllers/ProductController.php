@@ -7,6 +7,7 @@
  */
 namespace App\Http\Controllers;
 
+use App\youtubeuser;
 use Illuminate\Http\Request;
 use GuzzleHttp\Client;
 
@@ -29,16 +30,27 @@ class ProductController extends Controller
         //$json = json_decode(file_get_contents('http://host.com/api/stuff/1'), true);
     //}
 
+    /**
+     *
+     */
     public function index()
     {
-        $client = new Client();
+//        $client = new Client();
+//        $response = $client->get('http://localhost:8000/api/youtubeuser/1');
+//        if ($response->getStatusCode()) {
+//            $posts = json_decode($response->getBody()->getContents());
+//            return view('home', ['posts' => $posts]);
+//        }
+        return view('home');
+
+        /*'$client = new Client();
         $response = $client->get('http://127.0.0.1:8000/api/youtubeuser/1');
 
         $body = $response->getBody()->getContents();
         $project = json_decode($body);
 
         //return view ('views.home', compact('project'));
-        return view('views.home',['project' => $project]);
+        return view('views.home',['project' => $project]);*/
 
     }
 

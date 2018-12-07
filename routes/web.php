@@ -4,25 +4,21 @@
 use App\User;
 use App\Http\Resources\User as UserResource;
 use App\Http\Resources\UserCollection;
+use Illuminate\Support\Facades\Route;
 
-
-Route::get('/products/{id}', 'ProductController@show');
-Route::get('/home/{id}', 'ProductController@index');
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', function () {
-    return view('home');
-});
+Route::get('/home', 'ProductController@index');
 
 /*
 Route::get('/products', function () {
     return view('products');
 });
 */
-Route::get('product','Product@list');
+Route::get('/product','Product@list');
 
 
 Route::get('/user', function () {

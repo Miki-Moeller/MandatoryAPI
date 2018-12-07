@@ -11,7 +11,10 @@ Dette er et view
     </tr>
 
     <tr>
-        <td>{{$project->Username}}</td>
+        <td><ul>
+
+            </ul></td>
+        {{--<td>{{$project->Username}}</td>--}}
     </tr>
 
 
